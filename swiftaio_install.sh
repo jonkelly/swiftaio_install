@@ -179,11 +179,11 @@ sudo chown $SWIFT_USER:$SWIFT_GROUP /var/cache/swift
 mkdir ~/bin
 git clone https://github.com/openstack/swift.git
 cd ~/swift
-sudo python setup.py develop
+sudo python setup.py install
 cd ..
 git clone https://github.com/openstack/python-swiftclient.git
 cd ~/python-swiftclient
-sudo python setup.py develop
+sudo python setup.py install
 cd ..
 sudo pip install -r swift/test-requirements.txt
 
