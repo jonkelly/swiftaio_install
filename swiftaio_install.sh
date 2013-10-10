@@ -9,7 +9,7 @@
 # run the script with bash
 # profit
 
-# tested on Ubuntu 12.04, probably won't work on anything else
+# tested on Ubuntu 12.04, probably won't work on anything else 
 
 if [[ `whoami` == "root" ]]; then
     echo "Script must be run as non-root user (with sudo privs)"
