@@ -186,6 +186,8 @@ cd ~/python-swiftclient
 sudo python setup.py install
 cd ..
 sudo pip install -r swift/test-requirements.txt
+cd /
+sudo pip install --upgrade pbr
 
 # .bashrc
 cat >> ~/.bashrc <<EOF
