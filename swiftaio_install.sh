@@ -178,6 +178,14 @@ sudo service rsyslog restart
 sudo mkdir -p /var/cache/swift
 sudo chown $SWIFT_USER:$SWIFT_GROUP /var/cache/swift
 
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-0.9.8.tar.gz
+tar zxvf setuptools-0.9.8.tar.gz
+cd setuptools-0.9.8/
+sudo python setup.py install
+cd
+sudo easy_install pip
+sudo aptitude install libffi-dev
+
 mkdir ~/bin
 git clone https://github.com/openstack/swift.git
 cd ~/swift
