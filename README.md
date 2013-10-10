@@ -9,8 +9,22 @@ swiftaio_install.sh: Creates a standalone swift install per http://docs.openstac
 
 In order to use, create a non-root user as which swift will run.
 Grant that user ALL=NOPASSWD:ALL privs in sudoers, e.g.
-swift	ALL=NOPASSWD:ALL
+
+    swift	ALL=NOPASSWD:ALL
 
 Become the swift user, and run the script with bash.
 
 In a few minutes, you should have a working swift install!
+
+If this does not make sense to you, just run:
+
+    sudo su -
+    apt-get install -y git
+    useradd -m -s /bin/bash swift
+    echo "swift    ALL=NOPASSWD:ALL" >> /etc/sudoers
+    su - swift
+    git clone https://github.com/jonkelly/swiftaio_install/
+    cd swiftaio_install
+    bash swiftaio_install.sh
+    
+    
