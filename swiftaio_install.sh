@@ -447,8 +447,6 @@ EOF
 
 chmod +x ~/bin/*
 
-pip install python-swiftclient
-
 ~/bin/remakerings
 
 echo "Running unit tests"
