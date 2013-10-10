@@ -19,12 +19,10 @@ In a few minutes, you should have a working swift install!
 If this does not make sense to you, just run:
 
     sudo su -
-    apt-get install -y git
     useradd -m -s /bin/bash swift
     echo "swift    ALL=NOPASSWD:ALL" >> /etc/sudoers
     su - swift
-    git clone https://github.com/jonkelly/swiftaio_install/
-    cd swiftaio_install
+    wget https://raw.github.com/jonkelly/swiftaio_install/master/swiftaio_install.sh
     bash swiftaio_install.sh
     
     
