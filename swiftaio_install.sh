@@ -24,11 +24,9 @@ fi
 SWIFT_USER=`id -un`
 SWIFT_GROUP=`id -gn`
 
-sudo apt-get install python-software-properties -y
-sudo add-apt-repository -y ppa:swift-core/release
 sudo apt-get update
-sudo apt-get install -y curl gcc git-core memcached python-configobj python-coverage python-dev python-nose python-setuptools python-simplejson python-xattr sqlite3 xfsprogs python-webob python-eventlet python-greenlet python-pastedeploy python-netifaces python-pip
-sudo pip install mock
+apt-get install -y curl gcc memcached rsync sqlite3 xfsprogs git-core libffi-dev python-setuptools
+apt-get install -y python-coverage python-dev python-nose python-simplejson python-xattr python-eventlet python-greenlet python-pastedeploy python-netifaces python-pip python-dnspython python-mock
 sudo mkdir /srv
 sudo dd if=/dev/zero of=/srv/swift-disk bs=1024 count=0 seek=2000000
 sudo mkfs.xfs -i size=1024 /srv/swift-disk
