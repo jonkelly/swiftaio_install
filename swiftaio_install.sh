@@ -187,6 +187,7 @@ git clone https://github.com/openstack/python-swiftclient.git
 cd ~/python-swiftclient
 sudo python setup.py develop
 cd ..
+sudo pip install -r swift/test-requirements.txt
 
 # .bashrc
 cat >> ~/.bashrc <<EOF
